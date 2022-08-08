@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="144" id="rFX-2J-yXd" customClass="CallCell" customModule="todo_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="442" height="144"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rFX-2J-yXd" id="GP4-b5-aq2">
+                <rect key="frame" x="0.0" y="0.0" width="442" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="19j-p5-MaS">
+                        <rect key="frame" x="24" y="24" width="394" height="96"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ik-eY-ELU">
+                                <rect key="frame" x="0.0" y="0.0" width="394" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYL-VZ-aJB">
+                                <rect key="frame" x="0.0" y="58" width="394" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="19j-p5-MaS" firstAttribute="centerY" secondItem="GP4-b5-aq2" secondAttribute="centerY" id="OPn-Rx-lsp"/>
+                    <constraint firstItem="19j-p5-MaS" firstAttribute="top" secondItem="GP4-b5-aq2" secondAttribute="top" constant="24" id="dn7-8c-78j"/>
+                    <constraint firstItem="19j-p5-MaS" firstAttribute="leading" secondItem="GP4-b5-aq2" secondAttribute="leading" constant="24" id="eGT-tA-MrD"/>
+                    <constraint firstItem="19j-p5-MaS" firstAttribute="centerX" secondItem="GP4-b5-aq2" secondAttribute="centerX" id="j4c-pW-j8U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="6Ik-eY-ELU" id="OQQ-fD-fy9"/>
+                <outlet property="numberLabel" destination="MYL-VZ-aJB" id="XNS-fq-KAj"/>
+            </connections>
+            <point key="canvasLocation" x="-126.08695652173914" y="143.30357142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
